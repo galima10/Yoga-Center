@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", serif;
+}
+
+body {
+  font-size: 12px;
+}
+
+h1 {
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  margin: 110px 0 10px 0;
+}
+h2 {
+  font-family: "Poppins", serif;
+  color: #7b6cd5;
+  font-size: 22px;
+}
+h3 {
+  font-family: "Poppins", serif;
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  line-height: 20px;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(imgs/yoga-header.webp);
+  padding: 40px 270px 150px;
+  color: white;
+  ul {
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+#yogaClasses {
+  padding: 0 270px;
+  h2,
+  p,
+  li {
+    text-align: center;
+  }
+  h2 {
+    margin: 48px 0 10px;
+  }
+  li {
+    margin: 48px 10px;
+  }
+  img {
+    width: 70px;
+  }
+  h3 {
+    margin-bottom: 16px;
+  }
+}
+
+figure {
+  display: flex;
+  flex-direction: row-reverse;
+  img {
+    width: 50%;
+  }
+  figcaption {
+    width: 30%;
+    margin-right: 32px;
+    padding: 48px 0;
+    ul {
+      list-style: inside;
+    }
+    li {
+        margin: 24px 0;
+      }
+  }
+}
+
+#advantages {
+  background: url(imgs/advantages-of-yoga.webp);
+  section {
+    justify-content: space-between;
+    margin-bottom: 130px;
+  }
+  p {
+    margin: 8px 0 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  ul {
+    width: 42%;
+    p {
+      margin: 0 0 16px 0;
+    }
+  }
+  #listeGauche {
+    text-align: end;
+  }
+  #listeDroite {
+    text-align: start;
+  }
+  li {
+    width: 250px;
+  }
+  #listeDroite li:nth-of-type(3),
+  #listeGauche li:nth-of-type(1) {
+    margin: 0 calc(100% - 250px);
+  }
+  li:nth-of-type(2) {
+    margin: 0 auto;
+  }
+  img {
+    width: 70px;
+  }
+}
+
+section:not(#bestClass, #yogaClasses) {
+  padding: 48px 0;
+}
+
+#trainers {
+  ul {
+    margin: 50px 0 30px 0;
+    justify-content: space-around;
+    padding: 0 270px;
+    p {
+      font-style: italic;
+    }
+  }
+  img {
+    width: 145px;
+    height: 150px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
+
+footer {
+  background-color: #7b6cd5;
+  color: white;
+  padding: 50px;
+}
+
+header,
+#advantages {
+  background-size: cover;
+  background-position: center;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+#bestClass,
+#trainers {
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  p {
+    line-height: 24px;
+  }
+  header {
+    padding: 48px 180px 150px;
+    ul {
+      flex-direction: column;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+  }
+
+  #yogaClasses {
+    padding: 0;
+    ul {
+      flex-direction: column;
+    }
+  }
+  figure {
+    flex-direction: column-reverse;
+    figcaption {
+      padding: 48px 16px;
+      margin: 0;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  #advantages {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(imgs/advantages-of-yoga.webp);
+    background-size: cover;
+    background-position: bottom;
+    h2 {
+      color: #fe86d4;
+    }
+    section {
+      flex-direction: column;
+      margin: 56px 0 0;
+      padding: 0;
+      #listeGauche,
+      #listeDroite {
+        text-align: center;
+      }
+      ul {
+        width: 100%;
+        margin: 0;
+      }
+      li {
+        margin: 0 0 30px !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+  #trainers {
+    ul {
+      flex-direction: column;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 40px;
+    }
+  }
+}
